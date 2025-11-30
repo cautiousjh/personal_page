@@ -104,8 +104,11 @@ author:
   location         : "Seoul National University"
   email            :
   links:
-    - label: "CV"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:cautiousjh@snu.ac.kr"
+    - label: "CV"
+      icon: "fas fa-fw fa-link"
       url: "https://drive.google.com/file/d/12o9VEQjNbDq_iieLeEdzwA9HywopnuXc/view?usp=drive_link"
 
 
