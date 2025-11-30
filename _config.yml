@@ -100,7 +100,7 @@ analytics:
 author:
   name             : ""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A cognitive neuroscientist connecting human cognition with artificial intelligence. Site is under construction."
+  bio              : "A cognitive neuroscientist bridging human cognition and artificial intelligence. \n This site is under construction."
   location         : "Seoul National University"
   email            :
   links:
