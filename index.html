@@ -3,6 +3,25 @@ layout: default
 title: Home
 ---
 
+<div class="profile-section" style="margin-bottom: 3rem;">
+  <h1 style="margin-bottom: 0.5rem;">Jung Han Shin</h1>
+  <p class="bio" style="font-size: 1.1rem; color: #555;">
+    A cognitive neuroscientist bridging human cognition and artificial intelligence. <br>
+    This site is under construction.
+  </p>
+  
+  <div class="links" style="margin-top: 1rem;">
+    <a href="mailto:cautiousjh@snu.ac.kr" style="margin-right: 15px; text-decoration: underline;">
+      ✉️ Email
+    </a>
+    <a href="https://drive.google.com/file/d/12o9VEQjNbDq_iieLeEdzwA9HywopnuXc/view?usp=drive_link" target="_blank" style="text-decoration: underline;">
+      📄 CV (PDF)
+    </a>
+  </div>
+</div>
+
+<hr>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
@@ -23,17 +42,4 @@ title: Home
     {% endif %}
   </article>
   {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
 </div>
