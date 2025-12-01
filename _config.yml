@@ -3,14 +3,14 @@ title: "Jung Han Shin"
 url: "https://cautiousjh.github.io"
 baseurl: ""
 
-# Theme Settings (Moonwalk)
+# Theme Settings
 remote_theme: abhinavs/moonwalk
 
+# Profile & Navigation (Moonwalk specific)
 heading: "Jung Han Shin"
-subheading: >
-  A cognitive neuroscientist bridging human cognition and artificial intelligence.
-  <br>This site is under construction.
+subheading: "A cognitive neuroscientist bridging human cognition and artificial intelligence."
 
+# Menu items (Appears below the profile)
 nav_items:
   - name: Home
     link: /
@@ -19,7 +19,8 @@ nav_items:
   - name: Email
     link: "mailto:cautiousjh@snu.ac.kr"
 
-show_excerpts: true    
+# Blog Settings
+show_excerpts: true
 date_format: "%B %d, %Y"
 
 # Build Settings
@@ -29,9 +30,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Exclude leftovers
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/
   - README.md
