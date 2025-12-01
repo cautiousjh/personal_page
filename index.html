@@ -3,43 +3,18 @@ layout: default
 title: Home
 ---
 
-<div class="profile-section" style="margin-bottom: 3rem;">
-  <h1 style="margin-bottom: 0.5rem;">Jung Han Shin</h1>
-  <p class="bio" style="font-size: 1.1rem; color: #555;">
-    A cognitive neuroscientist bridging human cognition and artificial intelligence. <br>
-    This site is under construction.
-  </p>
-  
-  <div class="links" style="margin-top: 1rem;">
-    <a href="mailto:cautiousjh@snu.ac.kr" style="margin-right: 15px; text-decoration: underline;">
-      ✉️ Email
-    </a>
-    <a href="https://drive.google.com/file/d/12o9VEQjNbDq_iieLeEdzwA9HywopnuXc/view?usp=drive_link" target="_blank" style="text-decoration: underline;">
-      📄 CV (PDF)
-    </a>
-  </div>
-</div>
-
-<hr>
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+    <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
       </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
-      {{ post.date | date_format }}
-    </time>
-
+    </h3>
     {% if post.excerpt %}
-    <div class="post-excerpt">
-      {{ post.excerpt }}
-    </div>
+      <div class="post-excerpt">{{ post.excerpt }}</div>
     {% endif %}
-  </article>
+  </li>
   {% endfor %}
-</div>
+</ul>
