@@ -1,23 +1,26 @@
 # Site Settings
 title: "Jung Han Shin"
-author: "Jung Han Shin"
-email: "cautiousjh@snu.ac.kr"
-description: "A cognitive neuroscientist bridging human cognition and artificial intelligence."
 url: "https://cautiousjh.github.io"
 baseurl: ""
 
-# Theme Settings
-remote_theme: niklasbuschmann/contrast
+# Theme Settings (Moonwalk)
+remote_theme: abhinavs/moonwalk
 
-# Theme Config
-show_excerpts: true   
-katex: true          
-DateFormat: "%B %d, %Y"
+heading: "Jung Han Shin"
+subheading: >
+  A cognitive neuroscientist bridging human cognition and artificial intelligence.
+  <br>This site is under construction.
 
-# Navigation (Header)
-header_pages:
-  - index.html
-  - cv.md
+nav_items:
+  - name: Home
+    link: /
+  - name: CV
+    link: /cv/
+  - name: Email
+    link: "mailto:cautiousjh@snu.ac.kr"
+
+show_excerpts: true    
+date_format: "%B %d, %Y"
 
 # Build Settings
 markdown: kramdown
@@ -25,13 +28,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
 
-# Pagination
-paginate: 5
-paginate_path: "/page:num/"
-
-# Exclude (Clean up)
 exclude:
   - Gemfile
   - Gemfile.lock
