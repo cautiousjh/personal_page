@@ -2,3 +2,43 @@
 layout: default
 title: Home
 ---
+
+<div style="margin-top: 40px; margin-bottom: 60px;">
+  <h1 style="font-weight: 700; font-size: 2.5rem; margin-bottom: 1rem;">Jung Han Shin</h1>
+  
+  <p style="font-size: 1.2rem; line-height: 1.6; color: var(--secondary-text-color, #777);">
+    A cognitive neuroscientist bridging human cognition and artificial intelligence. <br>
+    This site is under construction.
+  </p>
+
+  <div style="margin-top: 20px; font-family: monospace;">
+    <a href="mailto:cautiousjh@snu.ac.kr" style="margin-right: 15px; text-decoration: none; border-bottom: 1px solid currentColor;">Email</a>
+    <a href="/cv/" style="text-decoration: none; border-bottom: 1px solid currentColor;">CV</a>
+  </div>
+</div>
+
+<hr style="border: 0; border-top: 1px solid var(--border-color, #333); margin-bottom: 40px;">
+
+<div>
+  <h2 style="font-size: 1.5rem; margin-bottom: 20px;">Posts</h2>
+  
+  <ul style="list-style: none; padding: 0;">
+    {% for post in site.posts %}
+    <li style="margin-bottom: 25px;">
+      <span style="display: block; font-size: 0.9rem; color: #888; margin-bottom: 5px;">
+        {{ post.date | date: "%B %d, %Y" }}
+      </span>
+      <a href="{{ post.url | relative_url }}" style="font-size: 1.3rem; font-weight: bold; text-decoration: none; border: none;">
+        {{ post.title }}
+      </a>
+      {% if post.excerpt %}
+        <div style="margin-top: 8px; color: var(--secondary-text-color, #aaa);">
+          {{ post.excerpt | strip_html | truncatewords: 30 }}
+        </div>
+      {% endif %}
+    </li>
+    {% else %}
+    <li style="color: #666;">There are no posts yet.</li>
+    {% endfor %}
+  </ul>
+</div>
