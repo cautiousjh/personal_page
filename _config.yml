@@ -13,6 +13,7 @@ subheading: "A cognitive neuroscientist bridging human cognition and artificial 
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
+  show_copyright: false
 
 # Menu items (Appears below the profile)
 nav_items:
