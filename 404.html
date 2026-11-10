@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junghan Shin — new website address</title>
+  <link rel="canonical" href="https://junghan.shin.ai.kr/">
+  <script>
+    const destination = new URL("https://junghan.shin.ai.kr/");
+    destination.pathname = window.location.pathname;
+    destination.search = window.location.search;
+    destination.hash = window.location.hash;
+    document.querySelector('link[rel="canonical"]').href = destination.origin + destination.pathname;
+    window.location.replace(destination.href);
+  </script>
+  <meta http-equiv="refresh" content="0;url=https://junghan.shin.ai.kr/">
+</head>
+<body>
+  <p>This website has moved to <a href="https://junghan.shin.ai.kr/">junghan.shin.ai.kr</a>.</p>
+</body>
+</html>

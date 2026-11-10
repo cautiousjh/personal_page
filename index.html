@@ -1,40 +1,21 @@
----
-layout: default
-title: Home
----
-
-<div style="margin-top: 10vh;">
-  
-  <h1 style="font-weight: 700; font-size: 2.5rem; margin-bottom: 1rem;">
-    Jung Han Shin
-  </h1>
-  
-  <p style="font-size: 1.2rem; line-height: 1.6; color: var(--secondary-text-color, #777); margin-bottom: 2rem;">
-    A cognitive neuroscientist bridging human cognition and artificial intelligence. <br>
-    This site is under construction.
-  </p>
-
-  <div style="font-size: 1.1rem;">
-    <a href="mailto:cautiousjh@snu.ac.kr" 
-       style="margin-right: 20px; text-decoration: none; border-bottom: 1px solid currentColor;">
-       Email
-    </a>
-
-    <a href="https://drive.google.com/file/d/12o9VEQjNbDq_iieLeEdzwA9HywopnuXc/view?usp=drive_link" 
-       target="_blank" 
-       style="text-decoration: none; border-bottom: 1px solid currentColor;">
-       CV
-    </a>
-  </div>
-
-</div>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2C2X8QPR7K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2C2X8QPR7K');
-</script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junghan Shin — new website address</title>
+  <link rel="canonical" href="https://junghan.shin.ai.kr/">
+  <script>
+    const destination = new URL("https://junghan.shin.ai.kr/");
+    destination.pathname = window.location.pathname;
+    destination.search = window.location.search;
+    destination.hash = window.location.hash;
+    document.querySelector('link[rel="canonical"]').href = destination.origin + destination.pathname;
+    window.location.replace(destination.href);
+  </script>
+  <meta http-equiv="refresh" content="0;url=https://junghan.shin.ai.kr/">
+</head>
+<body>
+  <p>This website has moved to <a href="https://junghan.shin.ai.kr/">junghan.shin.ai.kr</a>.</p>
+</body>
+</html>
